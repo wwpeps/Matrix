@@ -1,0 +1,32 @@
+﻿<Window x:Class="Matrix.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Matrix"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.502,0.574">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*"></RowDefinition>
+            <RowDefinition Height="90*"></RowDefinition>
+            <RowDefinition Height="90*"></RowDefinition>
+            <RowDefinition Height="169*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBox Name="q" HorizontalAlignment="Left"  Width="59" Margin="106,16,0,16" Foreground="#FF9C9C9C"></TextBox>
+            <TextBox x:Name="w" HorizontalAlignment="Left"  Width="59" Margin="256,16,0,16" Foreground="#FF9C9C9C"/>
+            <TextBox x:Name="d" HorizontalAlignment="Left"  Width="59" Margin="410,16,0,16" Foreground="#FF9C9C9C"/>
+            <Label Name="b" Content="ВЫВОД" Margin="600,46,0,12" FontSize="16" FontWeight="Bold" Background="White" Foreground="Black"></Label>
+        </Grid>
+        <TextBox x:Name="r" HorizontalAlignment="Left"  Width="59" Margin="106,10,0,22" Grid.Row="1" Foreground="#FF9C9C9C"/>
+        <TextBox x:Name="t" HorizontalAlignment="Left"  Width="59" Margin="256,10,0,22" Grid.Row="1" Foreground="#FF9C9C9C"/>
+        <TextBox x:Name="y" HorizontalAlignment="Left"  Width="59" Margin="410,10,0,22" Grid.Row="1" Foreground="#FF9C9C9C"/>
+        <TextBox x:Name="u" HorizontalAlignment="Left"  Width="59" Margin="106,16,0,16" Grid.Row="2" Foreground="#FF9C9C9C"/>
+        <TextBox x:Name="i" HorizontalAlignment="Left"  Width="59" Margin="256,16,0,16" Grid.Row="2" Foreground="#FF9C9C9C"/>
+        <TextBox x:Name="o" HorizontalAlignment="Left"  Width="59" Margin="410,16,0,16" Grid.Row="2" Foreground="#FF9C9C9C"/>
+
+        <TextBox Name="arg"  Margin="560,10,65,157" Grid.Row="1" Grid.RowSpan="3" BorderBrush="#FF5D5D5D" Foreground="#FF373737" TextAlignment="Justify"/>
+        <Button Name="ggr" Margin="585,46,90,68" Grid.Row="3" Content="Решить" FontSize="15" FontWeight="Bold" Click="ggr_Click"></Button>
+    </Grid>
+</Window>
